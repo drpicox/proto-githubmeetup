@@ -34,10 +34,10 @@
 
 	<div class="row">
 		<div class="col-xs-6">
-			<a ng-if="speaker.prev" ng-href="#/speakers/{{speaker.prev.date}}">&lt;&lt; Previous</a>
+			<a class="btn btn-default" ng-if="speaker.prev" ng-href="#/speakers/{{speaker.prev.date}}">&lt;&lt; Previous</a>
 		</div>
 		<div class="col-xs-6 text-right">
-			<a ng-if="speaker.next" ng-href="#/speakers/{{speaker.next.date}}">Next &gt;&gt;</a>
+			<a class="btn btn-default" ng-if="speaker.next" ng-href="#/speakers/{{speaker.next.date}}">Next &gt;&gt;</a>
 		</div>
 	</div>
 

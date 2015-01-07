@@ -23,10 +23,10 @@
 
 <div class="row">
 	<div class="col-xs-6">
-		<a ng-if="meetup.prev" ng-href="#/meetups/{{meetup.prev.date}}">&lt;&lt; Previous</a>
+		<a class="btn btn-default" ng-if="meetup.prev" ng-href="#/meetups/{{meetup.prev.date}}">&lt;&lt; Previous</a>
 	</div>
 	<div class="col-xs-6 text-right">
-		<a ng-if="meetup.next" ng-href="#/meetups/{{meetup.next.date}}">Next &gt;&gt;</a>
+		<a class="btn btn-default" ng-if="meetup.next" ng-href="#/meetups/{{meetup.next.date}}">Next &gt;&gt;</a>
 	</div>
 </div>
 
