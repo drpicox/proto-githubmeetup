@@ -1,0 +1,1 @@
+angular.module('com.david-rodenas.gm.pages.meetups', []);

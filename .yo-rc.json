@@ -1,0 +1,9 @@
+{
+  "generator-drpx": {
+    "app": "GithubMeetup",
+    "package": "com.david-rodenas",
+    "mainModule": "gm",
+    "module": "gm",
+    "portOffset": 57
+  }
+}

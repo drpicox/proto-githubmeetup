@@ -1,0 +1,30 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="page-header">
+			  <h1>Speakers <small>thanks friends</small></h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="media" ng-repeat="speaker in vm.speakers">
+			  <a class="media-left" ng-href="#/speakers/{{speaker.login}}">
+			    <img ng-src="{{speaker.avatar_url}}" alt="{{speaker.name}}" style="width: 64px">
+			  </a>
+			  <div class="media-body">
+			    <h4 class="media-heading"><a ng-href="#/speakers/{{speaker.login}}" style="color: inherit">{{speaker.name}}</a></h4>
+				<p>
+					<span ng-repeat="talk in speaker.talks">
+						<a href="#/meetups/{{talk.meetup.date}}">{{talk.title}}</a>
+						<span ng-if="!$last">, </span>
+					</span>
+				</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+</div>

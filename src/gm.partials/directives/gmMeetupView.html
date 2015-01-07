@@ -1,0 +1,32 @@
+<h3>{{meetup.title}} - {{meetup.due_on | date}} - {{meetup.time }} - {{meetup.location.name}}</h3>
+
+<div ng-bind-html="meetup.body">
+</div>
+<br><br>
+
+<div class="row">
+	<div ng-repeat="talk in meetup.talks" class="col-lg-3 col-lg-offset-2 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<gm-talk-view talk="talk"></gm-talk-view>
+			</div>
+		</div>
+	</div>
+	<div ng-if="meetup.talks.length < 2 && !meetup.archived" class="col-lg-3 col-lg-offset-2 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<gm-talk-empty-view></gm-talk-empty-view>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-xs-6">
+		<a ng-if="meetup.prev" ng-href="#/meetups/{{meetup.prev.date}}">&lt;&lt; Previous</a>
+	</div>
+	<div class="col-xs-6 text-right">
+		<a ng-if="meetup.next" ng-href="#/meetups/{{meetup.next.date}}">Next &gt;&gt;</a>
+	</div>
+</div>
+

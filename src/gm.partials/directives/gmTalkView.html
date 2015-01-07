@@ -1,0 +1,11 @@
+<img ng-src="{{talk.speaker.avatar_url}}" class="img-responsive">
+<p><a ng-href="#/speakers/{{talk.speaker.login}}">
+	{{talk.speaker.name}}
+</a></p>
+<p>LANGUAGE: {{talk.language | uppercase}} | LEVEL: {{talk.level | uppercase}}</p>
+
+<h4>{{talk.title}}</h4>
+
+<div ng-bind-html="talk.body">
+</div>
+
