@@ -109,10 +109,10 @@ angular.module('com.david-rodenas.gm').run(['$templateCache', function($template
     "\n" +
     "\t<div class=\"row\">\n" +
     "\t\t<div class=\"col-xs-6\">\n" +
-    "\t\t\t<a ng-if=\"speaker.prev\" ng-href=\"#/speakers/{{speaker.prev.date}}\">&lt;&lt; Previous</a>\n" +
+    "\t\t\t<a class=\"btn btn-default\" ng-if=\"speaker.prev\" ng-href=\"#/speakers/{{speaker.prev.date}}\">&lt;&lt; Previous</a>\n" +
     "\t\t</div>\n" +
     "\t\t<div class=\"col-xs-6 text-right\">\n" +
-    "\t\t\t<a ng-if=\"speaker.next\" ng-href=\"#/speakers/{{speaker.next.date}}\">Next &gt;&gt;</a>\n" +
+    "\t\t\t<a class=\"btn btn-default\" ng-if=\"speaker.next\" ng-href=\"#/speakers/{{speaker.next.date}}\">Next &gt;&gt;</a>\n" +
     "\t\t</div>\n" +
     "\t</div>\n" +
     "\n" +
@@ -180,10 +180,10 @@ angular.module('com.david-rodenas.gm').run(['$templateCache', function($template
     "\n" +
     "<div class=\"row\">\n" +
     "\t<div class=\"col-xs-6\">\n" +
-    "\t\t<a ng-if=\"meetup.prev\" ng-href=\"#/meetups/{{meetup.prev.date}}\">&lt;&lt; Previous</a>\n" +
+    "\t\t<a class=\"btn btn-default\" ng-if=\"meetup.prev\" ng-href=\"#/meetups/{{meetup.prev.date}}\">&lt;&lt; Previous</a>\n" +
     "\t</div>\n" +
     "\t<div class=\"col-xs-6 text-right\">\n" +
-    "\t\t<a ng-if=\"meetup.next\" ng-href=\"#/meetups/{{meetup.next.date}}\">Next &gt;&gt;</a>\n" +
+    "\t\t<a class=\"btn btn-default\" ng-if=\"meetup.next\" ng-href=\"#/meetups/{{meetup.next.date}}\">Next &gt;&gt;</a>\n" +
     "\t</div>\n" +
     "</div>\n" +
     "\n"
