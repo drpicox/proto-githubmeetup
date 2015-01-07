@@ -92,7 +92,7 @@
 		}
 
 		function formatDate(date) {
-			return $filter('date')(date, 'yyyy-MMM-dd','UTC');
+			return $filter('date')(date, 'yyyy-MMM-dd');
 		}
 
 		function linkTalk(talk, link) {
