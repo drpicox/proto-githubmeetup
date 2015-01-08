@@ -2,3 +2,4 @@ node_modules
 bower_packages
 www
 .tmp
+build.sh

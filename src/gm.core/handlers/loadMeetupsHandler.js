@@ -30,7 +30,7 @@
 
 		// retrieve talks from issues
 		talks = issues.then(function(issues) {
-			return issues.map(processIssue);
+			return issues.filter(isIssueValid).map(processIssue);
 		});
 
 		// retrieve speakers from issues (we do not get all github users)
@@ -93,6 +93,11 @@
 
 		function formatDate(date) {
 			return $filter('date')(date, 'yyyy-MMM-dd');
+		}
+
+		function isIssueValid(issue) {
+			return issue && 
+				issue.milestone && issue.milestone.number;
 		}
 
 		function linkTalk(talk, link) {
